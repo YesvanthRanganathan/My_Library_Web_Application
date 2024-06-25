@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sevillana&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Library</h1>
+    </div>
+
+    <div class="container">
+        <div class="book-container"> 
+            <h2>Tom and Jerry</h2>
+            <h5>- William Hanna </h5>
+            <p>Tom and Jerry is an American animated media franchise and series of comedy short films created in 1940 by William Hanna and Joseph Barbera. Best known for its 161 theatrical short films by Metro-Goldwyn-Mayer, the series centers on the rivalry between the titular characters of a cat named Tom and a mouse named Jerry. Many shorts also feature several recurring characters.</p>
+            <button onclick="clearbutton(event)">Clear</button>
+        </div>
+    </div>
+
+    <div class="popup-overlay"></div>
+    <div class="popup-message">
+        <h2>Add Book</h2>
+        <form >
+            <input type="text" placeholder="Add Title" id="title-input">
+            <input type="text" placeholder="book author" id="author-input">
+            <textarea placeholder="short-description" id="title-details"></textarea>
+
+            <button class="button2" id="add-book">Add</button>
+            <button  class="button2" id="cancel-book">cancel</button>
+        </form>
+    </div>
+
+    <!-- Eventlisterner is nothing but it is function in javscript it will wait for event that occurs on it -->
+    <!-- using AddEventListerner i created function for this button -->
+    <button id="plus-button" class="add-button" >+</button> 
+
+
+    <script src="script.js"></script>
+</body>
+</html>
