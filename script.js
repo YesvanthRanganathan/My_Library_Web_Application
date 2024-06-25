@@ -37,7 +37,8 @@ addbutton.addEventListener("click",function(event){
     event.preventDefault()//default cancel agarthu stop panitu 
     var div = document.createElement("div")
     div.setAttribute("class","book-container")
-    div.innerHTML=`<h2>${title.value}</h2>  //when we use dollor symbol that time we won't use double quotation
+     //when we use dollor symbol that time we won't use double quotation
+    div.innerHTML=`<h2>${title.value}</h2> 
     <h5>${author.value}</h5>
      <p>${details.value}</p>
      <button onclick="clearbutton(event)">Clear</button> `
